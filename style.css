@@ -30,12 +30,10 @@ body {
 }
 
 .navbar-menu-container {
-	flex: 1 1 0px;
 	cursor: pointer;
 }
 
 .navbar-logo-container {
-	flex: 1 1 0px;
 	display: flex;
 	justify-content: center;
 	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
@@ -44,10 +42,15 @@ body {
 }
 
 .navbar-social-icons-container {
-	flex: 1 1 0px;
 	display: flex;
 	justify-content: flex-end;
 	column-gap: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar-menu-container, .navbar-logo-container, .navbar-social-icons-container {
+		flex: 1 1 0px;
+	}
 }
 
 .navbar-social-icons-container a, .navbar-menu-container a, .navbar-logo-container a {
@@ -149,6 +152,7 @@ body {
 }
 
 .section-container {
+	/* border: 1px solid red; */
 	width: 100%;
 	padding-bottom: 10px;
 	padding-top: 40px;
@@ -160,6 +164,21 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+	.sections-col-container {
+		/* width: auto; */
+		align-items: flex-start;
+	}
+	
+	.section-container {
+		text-align: left;
+	}
+	
+	.section-row {
+		justify-content: flex-start;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
 	.sections-col-container {
 		width: auto;
 		align-items: flex-start;
