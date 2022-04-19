@@ -152,7 +152,6 @@ body {
 }
 
 .section-container {
-	/* border: 1px solid red; */
 	width: 100%;
 	padding-bottom: 10px;
 	padding-top: 40px;
@@ -202,3 +201,111 @@ body {
 .back-button:hover {
 	color: rgba(255, 255, 255, .7);
 }
+
+/* Exercises & problems */
+
+.exercise, .problem {
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+}
+
+.problem {
+	background: rgba(251, 51, 2, 1);
+}
+
+.exercise:hover {
+	border-top: 5px solid rgba(53, 162, 180, 1);
+	transform: scale(1.02);
+}
+
+.problem:hover {
+	border-top: 5px solid rgba(251, 51, 2, 1);
+}
+
+.exc-label {
+	font-size: 24pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+}
+
+.level {
+	font-size: 16pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+}
+
+/* Single exercises/problems */
+
+.exc-section { /* Check responsiveness! */
+	width: 1000px;
+	max-width: 90%;
+}
+
+.exc-container {
+	max-width: 90%;
+	justify-content: flex-start;
+	font-size: 16pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+}
+
+.exc-container p {
+	width: 100%;
+}
+
+.solution-button-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 20px;
+}
+
+.solution-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: rgba(251, 51, 2, 1);
+	padding: 5px 15px 5px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0px 2px 4px 0px rgba(33, 73, 99, 1);
+	transition-duration: 200ms;
+}
+
+.solution-button:hover {
+	background: rgba(251, 51, 2, .7);
+}
+
+.solution-box-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    z-index: 2;
+	background: rgba(10, 10, 10, .5);
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	transition-duration: 200ms;
+	transform: translateY(-100%);
+}
+
+.show {
+	transform: translateY(0);
+}
+
+.solution-box {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
+	border-radius: 5px;
+	background: rgba(33, 73, 83, 1);
+	box-shadow: 0px 4px 8px 0px rgba(33, 73, 99, 1);
+}
+
