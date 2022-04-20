@@ -1,0 +1,337 @@
+body, html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	background: rgba(46, 87, 109, 1);
+}
+
+.body-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+/* Navbar */
+
+.navbar-container {
+	background: rgba(66, 112, 135, 1);
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	max-width: 90%;
+	align-items: center;
+	color: white;
+	padding: 10px;
+}
+
+.navbar-menu-container {
+	cursor: pointer;
+}
+
+.navbar-logo-container {
+	display: flex;
+	justify-content: center;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	font-size: 24pt;
+	cursor: pointer;
+}
+
+.navbar-social-icons-container {
+	display: flex;
+	justify-content: flex-end;
+	column-gap: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar-menu-container, .navbar-logo-container, .navbar-social-icons-container {
+		flex: 1 1 0px;
+	}
+}
+
+.navbar-social-icons-container a, .navbar-menu-container a, .navbar-logo-container a {
+	text-decoration: none;
+	color: white;
+	transition-duration: 200ms;
+}
+
+.navbar-social-icons-container a:hover, .navbar-menu-container a:hover, .navbar-logo-container a:hover {
+	color: rgba(255, 255, 255, .7);
+}
+
+/* Cards */
+
+.cards-row-container {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	margin-top: 40px;
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	background: rgba(53, 162, 180, 1);
+	border-radius: 5px;
+	border-top: 5px white solid;
+	font-size: 24pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	text-align: center;
+	color: white;
+	width: 200px;
+	height: 100px;
+	padding: 5px;
+	cursor: pointer;
+	box-shadow: 0px 4px 8px 0px rgba(33, 73, 99, 1);
+	transition-duration: 200ms;
+}
+
+.card-container a {
+	text-decoration: none;
+	color: white;
+}
+
+@media only screen and (min-width: 768px) {
+	.cards-row-container {
+		width: 1000px;
+		max-width: 90%;
+		gap: 20px;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 40px;
+		flex-wrap: wrap;
+	}
+	
+	.card-container {
+		display: flex;
+		flex-direction: column;
+		background: rgba(53, 162, 180, 1);
+		border-radius: 5px;
+		border-top: 5px white solid;
+		font-size: 24pt;
+		font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+		color: white;
+		min-width: 200px;
+		min-height: 100px;
+		padding: 5px;
+		cursor: pointer;
+		box-shadow: 0px 4px 8px 0px rgba(33, 73, 99, 1);
+		transition-duration: 200ms;
+	}
+}
+
+.card-container:hover {
+	border-top: 5px solid rgba(251, 51, 2, 1);
+	transform: scale(1.02);
+}
+
+/* Classes */
+
+.classes {
+	justify-content: center;
+	align-items: center;
+}
+
+/* Sections */
+
+.section-row {
+	justify-content: center;
+}
+
+.sections-col-container {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.section-container {
+	width: 100%;
+	padding-bottom: 10px;
+	padding-top: 40px;
+	border-bottom: 1px white solid;
+	font-size: 24pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.sections-col-container {
+		/* width: auto; */
+		align-items: flex-start;
+	}
+	
+	.section-container {
+		text-align: left;
+	}
+	
+	.section-row {
+		justify-content: flex-start;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.sections-col-container {
+		width: auto;
+		align-items: flex-start;
+	}
+	
+	.section-container {
+		text-align: left;
+	}
+	
+	.section-row {
+		justify-content: flex-start;
+	}
+}
+
+/* Generic */
+
+.back-button {
+	transition-duration: 200ms;
+}
+
+.back-button:hover {
+	color: rgba(255, 255, 255, .7);
+}
+
+/* Exercises & problems */
+
+.exercise, .problem {
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+}
+
+.problem {
+	background: rgba(251, 51, 2, 1);
+}
+
+.exercise:hover {
+	border-top: 5px solid rgba(53, 162, 180, 1);
+	transform: scale(1.02);
+}
+
+.problem:hover {
+	border-top: 5px solid rgba(251, 51, 2, 1);
+}
+
+.exc-label {
+	font-size: 24pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+}
+
+.level {
+	font-size: 16pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+}
+
+/* Single exercises/problems */
+
+.exc-section {
+	width: 90%;
+}
+
+@media only screen and (min-width: 1200px) {
+	.exc-section { /* Check responsiveness! */
+		width: 1000px;
+		max-width: 90%;
+	}
+}
+
+.exc-container {
+	max-width: 90%;
+	justify-content: flex-start;
+	font-size: 16pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+}
+
+.exc-container p {
+	width: 100%;
+}
+
+.solution-button-container {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 20px;
+}
+
+.solution-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: rgba(251, 51, 2, 1);
+	padding: 5px 15px 5px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0px 2px 4px 0px rgba(33, 73, 99, 1);
+	transition-duration: 200ms;
+}
+
+.solution-button:hover {
+	background: rgba(251, 51, 2, .7);
+}
+
+.solution-box-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    z-index: 2;
+	background: rgba(10, 10, 10, .5);
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	/* display: none; */
+	transition-duration: 200ms;
+	transform: translateY(-100%);
+}
+
+.show {
+	transform: translateY(0);
+}
+
+.solution-box {
+	width: 1000px;
+	max-width: 90%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 20px;
+	border-radius: 5px;
+	display: none;
+	background: rgba(33, 73, 83, 1);
+	box-shadow: 0px 4px 8px 0px rgba(33, 73, 99, 1);
+}
+
+.solution-header-container {
+	padding-bottom: 10px;
+	padding-top: 40px;
+	border-bottom: 1px white solid;
+	font-size: 24pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+	text-align: left;
+}
+
+.solution-text-container {
+	font-size: 16pt;
+	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+	color: white;
+	text-align: left;
+}
