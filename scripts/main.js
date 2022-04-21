@@ -1,19 +1,17 @@
 function showSolution() {
-	const solutionBox = document.getElementById("solution-box");
-	const bodyContainer = document.getElementById("body-container");
-	const box = document.getElementById("box");
-	box.style.display = "block";
-	solutionBox.style.visibility = "visible";
-	solutionBox.classList.add("show");
-	bodyContainer.style.filter = "blur(5px)";
-}
-
-function hideSolution() {
-	const solutionBox = document.getElementById("solution-box");
-	const bodyContainer = document.getElementById("body-container");
-	const box = document.getElementById("box");
-	box.style.display = "none";
-	solutionBox.style.visibility = "hidden";
-	solutionBox.classList.remove("show");
-	bodyContainer.style.filter = "none";
+	const solSec = document.getElementById("sol-sec");
+	const solText = document.getElementById("sol-text");
+	const eyeBtn = document.getElementById("eye-btn");
+	if (eyeBtn.classList.contains("fa-eye-slash")) {
+		solSec.style.display = "none";
+		solText.style.display = "none";
+		eyeBtn.classList.remove("fa-eye-slash");
+		eyeBtn.classList.add("fa-eye");
+	} else {
+		solSec.style.display = "block";
+		solText.style.display = "block";
+		eyeBtn.classList.remove("fa-eye");
+		eyeBtn.classList.add("fa-eye-slash");
+	}
+	
 }
