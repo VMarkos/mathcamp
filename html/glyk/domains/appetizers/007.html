@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../../styles/style.css">
+		<script type="text/javascript" src="../../../../scripts/main.js"></script>
+		<script type="text/javascript" id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>
+			Mathcamp - aftermaths.gr
+		</title>
+	</head>
+	<body>
+		<div id="body-container" class="body-container">
+			<div class="navbar-container">
+				<div class="navbar-menu-container">
+					<span class="back-button" onclick="history.back()"><i class="fa fa-angle-left fa-2x"></i></span>
+				</div>
+				<div class="navbar-logo-container">
+					<a href="../../../../index.html">MathCamp</a>
+				</div>
+				<div class="navbar-social-icons-container">
+					<a href="https://www.facebook.com/aftermaths.gr/"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/aftermathsgr"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.instagram.com/aftermathsgr/?hl=el"><i class="fa fa-instagram fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="sections-col-container exc-section">
+				<div class="section-container">
+					Εκφώνηση
+				</div>
+				<div class="cards-row-container exc-container">
+					<p>
+						Να βρείτε το πεδίο ορισμού της συνάρτησης:
+						<div class="display-container">$$f(x)=\frac{1+\ln(x+1)}{\sqrt{x+2}-1}.$$</div>
+					</p>
+				</div>
+				<div class="solution-button-container">
+					<div class="solution-button" onclick="showSolution()">
+						<a href="#sol-sec"><i id="eye-btn" class="fa fa-eye fa-2x"></i></a>
+					</div>
+				</div>
+                <div id="sol-sec" class="section-container hidden">
+					Λύση
+				</div>
+				<div id="sol-text" class="cards-row-container exc-container hidden">
+					<p>
+						Έχουμε:
+                    </p>
+                    <ul>
+                        <li>
+                            Η ποσότητα μέσα στον λογάριθμο πρέπει να είναι θετική, δηλαδή:
+                            <div class="display-container">$$x+1>0\Leftrightarrow x>-1,$$</div>
+                            δηλαδή \(x\in(-1,+\infty)\).
+                        </li>
+                        <li>
+                            Η υπόρριζη ποσότητα πρέπει να είναι μη αρνητική, δηλαδή:
+                            <div class="display-container">$$x+2\geq0\Leftrightarrow x\geq-2$$</div>
+                            δηλαδή \(x\in[-2,+\infty)\).
+                        </li>
+                        <li>
+                            Ο παρονομαστής πρέπει να είναι μη μηδενικός, δηλαδή:
+                            <div class="display-container">$$\sqrt{x+2}-1\neq0.$$</div>
+                            Επιλύουμε την εξίσωση:
+                            <div class="display-container">$$\sqrt{x+2}-1=0\Leftrightarrow\sqrt{x+2}=1\Leftrightarrow x+2=1\Leftrightarrow x=-1$$</div>
+                            οπότε παίρνουμε τον περιορισμό:
+                            <div class="display-container">$$x\neq-1.$$</div>
+                        </li>
+                        <li>
+                            Συναληθεύοντας τους παραπάνω περιορισμούς παίρνουμε το πεδίο ορισμού της \(f\):
+                            <div class="display-container">$$D_f=(-1,+\infty).$$</div>
+                        </li>
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
