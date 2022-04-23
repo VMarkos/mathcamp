@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../../styles/style.css">
+		<script type="text/javascript" src="../../../../scripts/main.js"></script>
+		<script type="text/javascript" id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+        <script src="http://tikzjax.com/v1/tikzjax.js"></script>
+		<title>
+			Mathcamp - aftermaths.gr
+		</title>
+	</head>
+	<body>
+		<div id="body-container" class="body-container">
+			<div class="navbar-container">
+				<div class="navbar-menu-container">
+					<span class="back-button" onclick="history.back()"><i class="fa fa-angle-left fa-2x"></i></span>
+				</div>
+				<div class="navbar-logo-container">
+					<a href="../../../../index.html">MathCamp</a>
+				</div>
+				<div class="navbar-social-icons-container">
+					<a href="https://www.facebook.com/aftermaths.gr/"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/aftermathsgr"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.instagram.com/aftermathsgr/?hl=el"><i class="fa fa-instagram fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="sections-col-container exc-section">
+				<div class="section-container">
+					Εκφώνηση
+				</div>
+				<div class="cards-row-container exc-container">
+					<p>
+		                Πόσες συναρτήσεις \(f:\mathbb{R}\to\mathbb{R}\) υπάρχουν οι οποίες ικανοποιούν τη σχέση;
+                    </p>
+                    <div class="display-container display-image">
+                        $$\left|f(x)\right|=|x|.$$
+                    </div>
+				</div>
+				<div class="solution-button-container">
+					<div class="solution-button" onclick="showSolution()">
+						<a href="#sol-sec"><i id="eye-btn" class="fa fa-eye fa-2x"></i></a>
+					</div>
+				</div>
+                <div id="sol-sec" class="section-container hidden">
+					Λύση
+				</div>
+				<div id="sol-text" class="cards-row-container exc-container hidden">
+					<p>
+						Πολλές, είναι μία πρώτη απάντηση. Είναι πολύ πιθανό να πέσουμε στην παγίδα να πούμε ότι υπάρχουν δύο τέτοιες συναρτήσεις: οι \(f_1(x)=x\) και \(f_2(x)=-x\). Αυτό είναι μία απλή πρώτη σκέψη, ωστόσο είναι λάθος, 
+                        καθώς υπάρχουν κι άλλες συναρτήσεις που ικανοποιούν την παραπάνω σχέση όπως οι:
+                    </p>
+                    <div class="display-container">$$f_3(x)=|x|\text{ και } f_4(x)=-|x|.$$</div>
+                    <p>
+                        Ωστόσο, το δράμα δεν τελειώνει εδώ! Η παραπάνω σχέση μπορεί να ξαναγραφεί ως εξής:
+                    </p>
+                    <div class="display-container">
+                        $$\left|f(x)\right|=x\Leftrightarrow f(x)=x\text{ ή }f(x)=-x.$$
+                    </div>
+                    <p>
+                        Με λόγια,  παραπάνω σχέση μάς λέει ότι για κάθε \(x\in\mathbb{R}\) ισχύει είτε ότι \(f(x)=x\) είτε ότι \(f(x)=-x\). Παρατηρήστε ότι την απόφασή μας την παίρνουμε για κάθε
+                        \(x\) ξεχωριστά, δηλαδή, για να περιγράψουμε μία τέτοια συνάρτηση πλήρως πρέπει να αποφασίσουμε <i>για κάθε</i> \(x\in\mathbb{R}\) αν θα είναι \(f(x)=x\) ή \(f(x)=-x\). Συνεπώς, έχουμε 2 επιλογές
+                        <i>για κάθε</i> \(x\in\mathbb{R}\), οπότε, δεδομένουν ότι τα \(x\in\mathbb{R}\) είναι άπειρα στο πλήθος, έχουμε άπειρες στο πλήθος συναρτήσεις που να ικανοποιούν την παραπάνω σχέση. 
+                        Ενδεικτικά, παρακάτω παρουσιάζονται κάποιες από αυτές:
+                    </p>
+                    <div class="display-container">
+                        $$f_5(x)=\left\{\begin{array}{ll}
+                            x & x\in\mathbb{Q}\\
+                            -x & x\in\mathbb{R}-\mathbb{Q}
+                        \end{array}\right.,\ f_6(x)=\left\{\begin{array}{ll}
+                            x & x=1\\
+                            -x & x\neq1
+                        \end{array}\right.
+                        f_7(x)=\left\{\begin{array}{ll}
+                            x & x\in(-2,3]\\
+                            -x & x\in\mathbb{R}-(-2,3]
+                        \end{array}\right.$$
+                    </div>
+                    <p>
+                        Για να πάμε κι ένα βήμα παραπέρα, για να καθορίσουμε πλήρως μία συνάρτηση σαν την παραπάνω, αρκεί να αποφασίσουμε για ποια \(x\in\mathbb{R}\)$ θα 
+                        ισχύει \(f(x)=x\) (οπότε, για τα υπόλοιπα, θα ισχύει \(f(x)=-x\)). Συνεπώς, αρκεί να καθορίσουμε ένα σύνολο \(A\subseteq\mathbb{R}\) έτσι ώστε:
+                    </p>
+                    <div class="display-container">
+                        \[f_A(x)=\left\{\begin{array}{ll}
+                            x & x\in A\\
+                            -x & x\in\mathbb{R}-A
+                        \end{array}\right.\]
+                    </div>
+                    <p>
+                        Συνεπώς, οι συναρτήσεις που θέλουμε είναι ακριβώς τόσες όσα και τα υποσύνολα των πραγματικών αριθμών, τα οποία, για να πάμε άλλο ένα βήμα παραπέρα, είναι, «σαφώς», άπειρα, αλλά και περισσότερα, σε πλήθος, από τους πραγματικούς αριθμούς.
+                    </p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../../styles/style.css">
+		<script type="text/javascript" src="../../../../scripts/main.js"></script>
+		<script type="text/javascript" id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+        <script src="http://tikzjax.com/v1/tikzjax.js"></script>
+		<title>
+			Mathcamp - aftermaths.gr
+		</title>
+	</head>
+	<body>
+		<div id="body-container" class="body-container">
+			<div class="navbar-container">
+				<div class="navbar-menu-container">
+					<span class="back-button" onclick="history.back()"><i class="fa fa-angle-left fa-2x"></i></span>
+				</div>
+				<div class="navbar-logo-container">
+					<a href="../../../../index.html">MathCamp</a>
+				</div>
+				<div class="navbar-social-icons-container">
+					<a href="https://www.facebook.com/aftermaths.gr/"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/aftermathsgr"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.instagram.com/aftermathsgr/?hl=el"><i class="fa fa-instagram fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="sections-col-container exc-section">
+				<div class="section-container">
+					Εκφώνηση
+				</div>
+				<div class="cards-row-container exc-container">
+					<p>
+						Μπορείτε να εκφράσετε το \(x\) συναρτήσει του \(y\) ή/και το \(y\) συναρτήσει του \(x\) στην παρακάτω σχέση;
+                    </p>
+                    <div class="display-container display-image">
+                        $$3x+4y=5.$$
+                    </div>
+				</div>
+				<div class="solution-button-container">
+					<div class="solution-button" onclick="showSolution()">
+						<a href="#sol-sec"><i id="eye-btn" class="fa fa-eye fa-2x"></i></a>
+					</div>
+				</div>
+                <div id="sol-sec" class="section-container hidden">
+					Λύση
+				</div>
+				<div id="sol-text" class="cards-row-container exc-container hidden">
+					<p>
+						Σαφώς, έχουμε:
+                    </p>
+                    <div class="display-container">$$x=x(y)=\frac{5-4y}{3},$$</div>
+                    <p>
+                        καθώς και:
+                    </p>
+                    <div class="display-container">
+                        $$y=y(x)=\frac{5-3x}{4}.$$
+                    </div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

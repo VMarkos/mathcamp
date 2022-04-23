@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="../../../../styles/style.css">
+		<script type="text/javascript" src="../../../../scripts/main.js"></script>
+		<script type="text/javascript" id="MathJax-script" async
+			src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+		</script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="http://tikzjax.com/v1/fonts.css">
+        <script src="http://tikzjax.com/v1/tikzjax.js"></script>
+		<title>
+			Mathcamp - aftermaths.gr
+		</title>
+	</head>
+	<body>
+		<div id="body-container" class="body-container">
+			<div class="navbar-container">
+				<div class="navbar-menu-container">
+					<span class="back-button" onclick="history.back()"><i class="fa fa-angle-left fa-2x"></i></span>
+				</div>
+				<div class="navbar-logo-container">
+					<a href="../../../../index.html">MathCamp</a>
+				</div>
+				<div class="navbar-social-icons-container">
+					<a href="https://www.facebook.com/aftermaths.gr/"><i class="fa fa-facebook fa-2x"></i></a>
+					<a href="https://twitter.com/aftermathsgr"><i class="fa fa-twitter fa-2x"></i></a>
+					<a href="https://www.instagram.com/aftermathsgr/?hl=el"><i class="fa fa-instagram fa-2x"></i></a>
+				</div>
+			</div>
+			<div class="sections-col-container exc-section">
+				<div class="section-container">
+					Εκφώνηση
+				</div>
+				<div class="cards-row-container exc-container">
+					<p>
+		                Για μία συνάρτηση \(f:[0,1]\to[0,1]\) να αποδείξετε ότι για κάθε \(x,y\in[0,1]\) ισχύει ότι:
+                    </p>
+                    <div class="display-container display-image">
+                        $$|f(x)-f(y)|\leq1.$$
+                    </div>
+				</div>
+				<div class="solution-button-container">
+					<div class="solution-button" onclick="showSolution()">
+						<a href="#sol-sec"><i id="eye-btn" class="fa fa-eye fa-2x"></i></a>
+					</div>
+				</div>
+                <div id="sol-sec" class="section-container hidden">
+					Λύση
+				</div>
+				<div id="sol-text" class="cards-row-container exc-container hidden">
+					<p>
+						Αφού το πεδίο τιμών της \(f\) είναι το \([0,1]\) έχουμε για κάθε \(x,y\in[0,1]:\)
+                    </p>
+                    <div class="display-container">
+                        $$0\leq f(x)\leq1\text{ και }0\leq f(y)\leq 1\Leftrightarrow0\geq-f(y)\geq-1.$$
+                    </div>
+                    <p>
+                        Γράφοντας τις δύο ανισότητες με την ίδια φορά, έχουμε:
+                    </p>
+                    <div class="display-container">
+                        $$0\leq f(x)\leq 1\text{ και }-1\leq -f(y)\leq0.$$
+                    </div>
+                    <p>
+                        Προσθέτοντας κατά μέλη, παίρνουμε:
+                    </p>
+                    <div class="display-container">
+                        $$-1\leq f(x)-f(y)\leq1\Leftrightarrow|f(x)-f(y)|\leq1,$$
+                    </div>
+                    <p>
+                        που ήταν και το ζητούμενο. <i>Διαισθητικά, είναι προφανές αυτό που ζητείται, αφού τα \(f(x),f(y)\) είναι αριθμοί στο \([0,1]\), επομένως δε γίνεται να απέχουν περισσότερο από 1.</i>
+                    </p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
