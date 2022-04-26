@@ -34,10 +34,10 @@
 				</div>
 				<div class="cards-row-container exc-container">
 					<p>
-						Παριστάνει η παρακάτω αντιστοίχιση μία συνάρτηση \(f:A\rightarrow B;\)
+						Μπορείτε να εκφράσετε το \(x\) συναρτήσει του \(y\) ή/και το \(y\) συναρτήσει του \(x\) στην παρακάτω σχέση;
                     </p>
-                    <div class="display-container display-image">
-                        <img src="../../../../assets/function_definition/appetizers/002.svg">
+                    <div class="display-container">
+                        $$x^2+y^3=1.$$
                     </div>
 				</div>
 				<div class="solution-button-container">
@@ -50,8 +50,18 @@
 				</div>
 				<div id="sol-text" class="cards-row-container exc-container hidden">
 					<p>
-						Η παραπάνω ανιστοίχιση αναπαριστά συνάρτηση, καθώς απεικονίζει κάθε στοιχείο του \(A\) σε ένα και μοναδικό στοιχείο του \(B,\) όπως απαιτεί ο ορισμός.
+						Παρατηρούμε αρχικά ότι για \(y=0\) έχουμε:
                     </p>
+                    <div class="display-container">$$x^2=1\Leftrightarrow x=\pm1,$$</div>
+                    <p>
+                        άρα το \(x\) δε γράφεται ως συνάρτηση του \(y\). Από την άλλη, παρατηρούμε ότι:
+                    </p>
+                    <div class="display-container">
+                        $$x^2+y^3=1\Leftrightarrow y^3=1-x^2\Leftrightarrow y=y(x)=\left\{\begin{array}{ll}
+                        \sqrt[3]{1-x^2} & x\in[-1,1]\\
+                        -\sqrt[3]{x^2-1} & x\in(-\infty,-1)\cup(1,+\infty)
+                        \end{array}\right..$$
+                    </div>
 				</div>
 			</div>
 		</div>
