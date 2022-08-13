@@ -47,7 +47,41 @@ body {
 	column-gap: 15px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-container {
+		background: rgba(66, 112, 135, 1);
+		border-radius: 5px;
+		display: flex;
+		justify-content: space-between;
+		width: 1000px;
+		max-width: 90%;
+		align-items: center;
+		color: white;
+		padding: 20px;
+	}
+
+	.navbar-menu-container {
+		cursor: pointer;
+		font-size: 24pt;
+	}
+	
+	.navbar-logo-container {
+		display: flex;
+		justify-content: center;
+		font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+		font-size: 48pt;
+		cursor: pointer;
+	}
+	
+	.navbar-social-icons-container {
+		display: flex;
+		font-size: 24pt;
+		justify-content: flex-end;
+		column-gap: 30px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
 	.navbar-menu-container, .navbar-logo-container, .navbar-social-icons-container {
 		flex: 1 1 0px;
 	}
@@ -97,7 +131,36 @@ body {
 	color: white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.cards-row-container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 40px;
+		margin-top: 80px;
+	}
+	
+	.card-container {
+		display: flex;
+		flex-direction: column;
+		background: rgba(53, 162, 180, 1);
+		border-radius: 10px;
+		border-top: 10px white solid;
+		font-size: 48pt;
+		font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+		text-align: center;
+		color: white;
+		width: 400px;
+		height: 200px;
+		padding: 10px;
+		cursor: pointer;
+		box-shadow: 0px 4px 8px 0px rgba(33, 73, 99, 1);
+		transition-duration: 200ms;
+	}
+}
+
+@media only screen and (min-width: 992px) {
 	.cards-row-container {
 		width: 1000px;
 		max-width: 90%;
@@ -162,22 +225,31 @@ body {
 	text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.section-row {
+		justify-content: center;
+	}
+	
 	.sections-col-container {
-		/* width: auto; */
-		align-items: flex-start;
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	
 	.section-container {
-		text-align: left;
-	}
-	
-	.section-row {
-		justify-content: flex-start;
+		width: 100%;
+		padding-bottom: 20px;
+		padding-top: 40px;
+		border-bottom: 1px white solid;
+		font-size: 48pt;
+		font-family: 'Consolas', 'Ubuntu mono', 'monospace';
+		color: white;
+		text-align: center;
 	}
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 992px) {
 	.sections-col-container {
 		width: auto;
 		align-items: flex-start;
@@ -233,6 +305,16 @@ body {
 	font-size: 16pt;
 	font-family: 'Consolas', 'Ubuntu mono', 'monospace';
 	color: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.exc-label {
+		font-size: 48pt;
+	}
+
+	.level {
+		font-size: 32pt;
+	}
 }
 
 /* Single exercises/problems */
