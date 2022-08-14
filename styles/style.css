@@ -389,7 +389,7 @@ body {
 .exc-container ul {
 	/* border: 1px solid red; */
 	max-width: 90%;
-	line-height: 24pt;
+	/* line-height: 24pt; */
 }
 
 /* .exc-container p {
